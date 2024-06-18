@@ -2,12 +2,12 @@ const div = document.getElementById("div");
 
 const addTodo = (event) => {
   if (event.key === "Enter") {
-    console.log("Anda pencet Enter");
+    // console.log("Anda pencet Enter");
     const username = event.target.value;
-    const pBAru = document.createElement("p");
+    const liBAru = document.createElement("li");
     const textP = document.createTextNode(username);
-    pBAru.appendChild(textP);
+    liBAru.appendChild(textP);
 
-    div.appendChild(pBAru);
+    div.appendChild(liBAru);
   }
 };
